@@ -1,15 +1,17 @@
 <template>
-	<div class="container pt-9">
-		<Header />
-		<Hero />
+	<div v-if="isLoaded == true" class="container pt-9">
+		<div class="h-screen">
+			<Header />
+			<Hero />
+		</div>
 		<Experience />
 		<AboutMe />
 		<Portfolio />
 		<Technologies />
 		<Contacts />
 	</div>
-	<Footer />
-	<!-- <Preloader v-else-if="isLoaded == false" /> -->
+	<Footer v-if="isLoaded == true" />
+	<Preloader v-else-if="isLoaded == false" />
 </template>
 
 <script lang="ts" setup>

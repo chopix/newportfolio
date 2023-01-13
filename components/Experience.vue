@@ -1,6 +1,6 @@
 <template>
 	<section
-		class="experience mt-[269px] py-[100px] border-solid border-y border-primary-semi"
+		class="experience py-[100px] border-solid border-y border-primary-semi"
 	>
 		<div class="flex items-center justify-evenly">
 			<ExperienceBlock

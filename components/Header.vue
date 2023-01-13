@@ -36,13 +36,6 @@
 					>
 						Контакты
 					</li>
-					<li
-						@click="toggleDark()"
-						style="box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)"
-						class="header-li__item cursor-pointer w-10 h-10 flex items-center justify-center rounded-full bg-primary-semi"
-					>
-						<Sun />
-					</li>
 				</ul>
 			</nav>
 		</header>
@@ -51,7 +44,6 @@
 
 <script lang="ts" setup>
 import Logo from './UI/Logo.vue';
-import Sun from './UI/Sun.vue';
 import { gsap } from 'gsap';
 import { onMounted, ref } from 'vue';
 
@@ -76,17 +68,6 @@ function scrollToTech() {
 function scrollToCont() {
 	let el = document.querySelector('.contacts');
 	el.scrollIntoView({ block: 'center', behavior: 'smooth' });
-}
-
-function toggleDark() {
-	document.documentElement.classList.toggle('dark');
-	if (isDarkTheme.value == false) {
-		isDarkTheme.value = true;
-		localStorage.setItem('theme', 'dark');
-	} else {
-		isDarkTheme.value = false;
-		localStorage.setItem('theme', 'light');
-	}
 }
 
 onMounted(() => {
