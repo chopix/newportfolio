@@ -1,24 +1,24 @@
 <template>
-	<section class="about mt-[141px] w-[926.88px] mx-auto">
+	<section class="about mt-36 max-w-5xl mx-auto md:flex md:flex-col md:items-center">
 		<SectionRectangle class="rectangle-about" :img="monokle"
 			>Обо мне</SectionRectangle
 		>
-		<h3 class="about-title w-[733px] font-extrabold text-5xl text-white mt-6">
+		<h3 class="about-title max-w-3xl font-extrabold text-5xl text-white mt-6 md:text-center md:text-4xl sm:text-3xl">
 			Гений, миллиардер, плейбой, филантроп
 		</h3>
 		<p class="about-desc mt-6 text-gray text-lg">
 			<span class="flex items-center">
 				<img
-					class="w-[20px] h-[20px] mr-2 animate"
+					class="w-5 h-5 mr-2 animate"
 					src="~/assets/img/emojis/hand.png"
 					alt="hand"
 				/>
-				Меня зовут Дима, мой псевдоним chopix, я занимаюсь разработкой сайтов и
+				Меня зовут Дима, мой псевдоним Chopix, я занимаюсь разработкой сайтов и
 				телеграмм ботов на заказ<br /> </span
 			><br />
 			<span class="flex items-center">
 				<img
-					class="w-[20px] h-[20px] mr-2"
+					class="w-5 h-5 mr-2"
 					src="~/assets/img/emojis/comp.png"
 					alt="comp"
 				/>
@@ -28,7 +28,7 @@
 			><br />
 			<span class="flex items-center">
 				<img
-					class="w-[20px] h-[20px] mr-2"
+					class="w-5 h-5 mr-2"
 					src="~/assets/img/emojis/bulb.png"
 					alt="bulb"
 				/>
@@ -38,7 +38,7 @@
 			><br />
 			<span class="flex items-center">
 				<img
-					class="w-[20px] h-[20px] mr-2"
+					class="w-5 h-5 mr-2"
 					src="~/assets/img/emojis/rocket.png"
 					alt="rocket"
 				/>
@@ -103,5 +103,10 @@ onMounted(() => {
 	100% {
 		transform: rotate(-10deg);
 	}
+}
+.about-desc {
+  @apply max-w-5xl;
+  @apply md:text-base;
+  @apply sm:text-sm;
 }
 </style>

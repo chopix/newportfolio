@@ -1,6 +1,6 @@
 <template>
 	<div v-if="isLoaded == true" class="container pt-9">
-		<div class="h-screen">
+		<div class="h-screen xl:h-auto">
 			<Header />
 			<Hero />
 		</div>

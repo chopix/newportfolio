@@ -1,10 +1,10 @@
 <template>
-	<section class="portfolio mt-[208px]">
+	<section class="portfolio mt-[208px] md:mt-[100px]">
 		<SectionRectangle class="rectangle-portfolio" :img="link"
 			>Портфолио</SectionRectangle
 		>
 		<h3
-			class="portfolio-title w-[733px] font-extrabold text-5xl text-white mt-6"
+			class="portfolio-title max-w-3xl font-extrabold text-5xl text-white mt-6"
 		>
 			Мои проекты
 		</h3>

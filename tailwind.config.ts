@@ -18,9 +18,17 @@ export default <Partial<Config>>{
 			center: true,
 		},
 		screens: {
+			xl: { max: '1655px' },
 			lg: { max: '991.98px' },
-			md: { max: '767.98' },
+			md: { max: '767.98px' },
 			sm: { max: '479.98px' },
+		},
+		extend: {
+			spacing: {
+				'25': '6.438rem',
+				'85': '22.813rem',
+        '120': '40.313rem',
+			},
 		},
 		colors: {
 			primary: '#7B4AE2',

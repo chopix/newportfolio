@@ -2,22 +2,22 @@
 	<section
 		class="experience py-[100px] border-solid border-y border-primary-semi"
 	>
-		<div class="flex items-center justify-evenly">
+		<div class="flex items-center justify-evenly lg:flex-col">
 			<ExperienceBlock
-				class="experience-block"
+				class="experience-block xl:mb-10"
 				title="1 ГОД"
 				subtitle="ПРОГРАММИСТ"
 				:img="FirstBlockImg"
 				:is-first-letter-capital="true"
 			/>
 			<ExperienceBlock
-				class="experience-block"
+				class="experience-block xl:mb-10"
 				title="ПОЛ ГОДА"
 				subtitle="КОМЕРЧЕСКОГО ОПЫТА"
 				:img="SecondBlockImg"
 			/>
 			<ExperienceBlock
-				class="experience-block"
+				class="experience-block xl:mb-10"
 				title="16 ЛЕТ"
 				subtitle="ХОРОШИЙ ЧЕЛОВЕК"
 				:img="ThirdBlockImg"
@@ -25,15 +25,15 @@
 			/>
 		</div>
 		<div
-			class="experience-big__block mx-auto flex items-center justify-evenly rounded-2xl w-[645px] h-[110px] bg-primary-semi mt-8"
+			class="experience-big__block mx-auto flex items-center justify-evenly rounded-2xl max-w-xl w-full h-[110px] bg-primary-semi mt-8 sm:h-[70px] sm:max-w-xs"
 		>
 			<div class="flex flex-col items-center">
-				<p class="text-primary text-base w-[85px]">разработчик</p>
-				<p class="font-bold text-3xl text-primary">фулстек</p>
+				<p class="text-primary text-base sm:text-xs">разработчик</p>
+				<p class="font-bold text-3xl text-primary sm:text-xl">фулстек</p>
 			</div>
 			<div class="flex flex-col items-center">
-				<p class="text-primary text-base">коммерческий</p>
-				<p class="font-bold text-3xl text-primary">опыт</p>
+				<p class="text-primary text-base sm:text-xs">коммерческий</p>
+				<p class="font-bold text-3xl text-primary sm:text-xl">опыт</p>
 			</div>
 		</div>
 	</section>
@@ -71,7 +71,7 @@ onMounted(() => {
 
 				// scrub: true,
 			},
-			width: '200px',
+			// width: '200px',
 		});
 	}
 });

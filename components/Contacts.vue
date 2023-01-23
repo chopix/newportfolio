@@ -5,7 +5,7 @@
 		<SectionRectangle class="contacts-rectangle" :img="contacts"
 			>Контакты</SectionRectangle
 		>
-		<h3 class="contacts-title font-extrabold text-5xl text-white mt-2">
+		<h3 class="contacts-title font-extrabold text-5xl text-white mt-2 sm:text-4xl">
 			Мои контакты
 		</h3>
 		<div class="mt-8 mx-auto flex items-center">
@@ -29,7 +29,7 @@
 					/>
 				</svg>
 			</a>
-			<a class="contacts-tg" href="https://vk.com/chopixov" target="_blank">
+			<a class="contacts-tg" href="https://t.me/ch0pix" target="_blank">
 				<svg
 					class="svg-hover"
 					width="44"

@@ -1,19 +1,15 @@
 <template>
-	<main class="w-full mt-[103px] flex items-center">
-		<div>
+	<main class="w-full mt-25 flex items-center xl:flex-col xl:justify-center xl:items-center">
+		<div class="flex flex-col xl:items-center">
 			<SectionRectangle class="rectangle" :animateProp="true" :img="hand"
 				>Привет!</SectionRectangle
 			>
-			<h1 class="title mt-6 text-[52px] text-white w-[189px] font-extrabold">
+			<h1 class="title mt-6 text-[52px] text-white w-[189px] font-extrabold xl:text-center">
 				Toronto Tokyo
 			</h1>
-			<h2 class="subtitle mt-4 text-xl text-gray">Fullstack web developer</h2>
+			<h2 class="subtitle mt-4 text-xl text-gray xl:mb-5">Fullstack web developer</h2>
 		</div>
-		<img
-			class="image ml-[365px]"
-			src="~/assets/img/HeroImage.png"
-			alt="HeroImage"
-		/>
+		<img class="image ml-[365px] xl:ml-0 xl:mb-25" src="~/assets/img/HeroImage.png" alt="HeroImage" />
 	</main>
 </template>
 

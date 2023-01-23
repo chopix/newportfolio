@@ -2,7 +2,7 @@
 	<div
 		@mousemove="ripple"
 		ref="projectBlock"
-		class="w-[360px] h-fit border border-solid border-primary-dark py-7 px-[30px] rounded-2xl project-block overflow-hidden"
+		class="w-[360px] h-fit border border-solid border-primary-dark py-7 px-[30px] rounded-2xl project-block overflow-hidden sm:w-[280px]"
 	>
 		<div class="inner">
 			<h3 class="text-white font-bold text-xl">{{ title }}</h3>
@@ -24,7 +24,7 @@
 					{{ item }}
 				</div>
 			</div>
-			<img class="mt-5 w-[300px] h-[200px]" :src="img" :alt="title" />
+			<img class="mt-5 w-[300px] h-[200px] sm:h-[130px] " :src="img" :alt="title" />
 		</div>
 	</div>
 </template>
