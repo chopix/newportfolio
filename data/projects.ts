@@ -16,7 +16,7 @@ const Projects: Array<IProjects> = [
 			'Сайт для сервера самп, больше 5-ти страниц, много различных красивых анимаций, слайдеры, модальные окна, система личного кабинета с авторизацией.',
 		tags: ['Nuxt JS', 'Laravel'],
 		img: westrp,
-		link: 'https://samp-west.ru/',
+		link: 'https://west-rp.ru/',
 	},
   {
     title: 'Админ панель для Mordor RP',
