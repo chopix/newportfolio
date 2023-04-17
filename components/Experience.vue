@@ -2,7 +2,7 @@
 	<section
 		class="experience py-[100px] border-solid border-y border-primary-semi"
 	>
-		<div class="flex items-center justify-evenly lg:flex-col">
+		<div class="flex items-center gap-x-48 justify-center lg:flex-col">
 			<ExperienceBlock
 				class="experience-block xl:mb-10"
 				title="1 ГОД"
@@ -15,13 +15,6 @@
 				title="ПОЛ ГОДА"
 				subtitle="КОМЕРЧЕСКОГО ОПЫТА"
 				:img="SecondBlockImg"
-			/>
-			<ExperienceBlock
-				class="experience-block xl:mb-10"
-				title="16 ЛЕТ"
-				subtitle="ХОРОШИЙ ЧЕЛОВЕК"
-				:img="ThirdBlockImg"
-				:is-first-letter-capital="true"
 			/>
 		</div>
 		<div
