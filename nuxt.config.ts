@@ -6,7 +6,8 @@
 export default defineNuxtConfig({
 	app: {
 		head: {
-      title: 'Toronto Tokyo - fullstack dev',
+			title: 'Toronto Tokyo - fullstack dev',
+			meta: [{ name: 'freelancehunt', content: '1896eb1c026e952' }],
 			link: [
 				{
 					rel: 'preconnect',
@@ -21,23 +22,23 @@ export default defineNuxtConfig({
 					rel: 'stylesheet',
 					href: 'https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700;800;900&display=swap',
 				},
-        {
-          rel: 'apple-touch-icon',
-          sizes: '180x180',
-          href: './assets/apple-touch-icon.png'
-        },
-        {
-          rel: 'icon',
-          type: 'image/png',
-          sizes: '32x32',
-          href: './assets/favicon-32x32.png'
-        },
-        {
-          rel: 'icon',
-          type: 'image/png',
-          sizes: '16x16',
-          href: './assets/favicon-16x16.png'
-        },
+				{
+					rel: 'apple-touch-icon',
+					sizes: '180x180',
+					href: './assets/apple-touch-icon.png',
+				},
+				{
+					rel: 'icon',
+					type: 'image/png',
+					sizes: '32x32',
+					href: './assets/favicon-32x32.png',
+				},
+				{
+					rel: 'icon',
+					type: 'image/png',
+					sizes: '16x16',
+					href: './assets/favicon-16x16.png',
+				},
 			],
 		},
 	},
