@@ -29,7 +29,7 @@
 <!--					/>-->
 <!--				</svg>-->
 <!--			</a>-->
-			<a class="contacts-tg" href="https://t.me/ch0pix" target="_blank">
+			<a class="contacts-tg" href="https://t.me/s3ptemberich" target="_blank">
 				<svg
 					class="svg-hover"
 					width="44"
