@@ -5,14 +5,14 @@
 		<div class="flex items-center gap-x-48 justify-center lg:flex-col">
 			<ExperienceBlock
 				class="experience-block xl:mb-10"
-				title="1 ГОД"
+				title="ТРИ ГОДА"
 				subtitle="ПРОГРАММИСТ"
 				:img="FirstBlockImg"
 				:is-first-letter-capital="true"
 			/>
 			<ExperienceBlock
 				class="experience-block xl:mb-10"
-				title="ПОЛ ГОДА"
+				title="ДВА ГОДА"
 				subtitle="КОМЕРЧЕСКОГО ОПЫТА"
 				:img="SecondBlockImg"
 			/>
@@ -33,17 +33,17 @@
 </template>
 
 <script lang="ts" setup>
-import ExperienceBlock from './UI/ExperienceBlock.vue';
-import FirstBlockImg from '~/assets/img/experience/FirstBlock.svg';
-import SecondBlockImg from '~/assets/img/experience/SecondBlock.svg';
-import ThirdBlockImg from '~/assets/img/experience/ThirdBlock.svg';
-import gsap from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { onMounted } from 'vue';
+import ExperienceBlock from './UI/ExperienceBlock.vue'
+import FirstBlockImg from '~/assets/img/experience/FirstBlock.svg'
+import SecondBlockImg from '~/assets/img/experience/SecondBlock.svg'
+import ThirdBlockImg from '~/assets/img/experience/ThirdBlock.svg'
+import gsap from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
+import { onMounted } from 'vue'
 
 onMounted(() => {
 	if (process.client) {
-		gsap.registerPlugin(ScrollTrigger);
+		gsap.registerPlugin(ScrollTrigger)
 		gsap.from('.experience-block', {
 			scrollTrigger: {
 				trigger: '.experience',
@@ -55,7 +55,7 @@ onMounted(() => {
 			transformOrigin: 'left center',
 			stagger: 0.5,
 			ease: 'none',
-		});
+		})
 		gsap.from('.experience-big__block', {
 			scrollTrigger: {
 				trigger: '.experience',
@@ -65,7 +65,7 @@ onMounted(() => {
 				// scrub: true,
 			},
 			// width: '200px',
-		});
+		})
 	}
-});
+})
 </script>

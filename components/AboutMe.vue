@@ -1,9 +1,13 @@
 <template>
-	<section class="about mt-36 max-w-5xl mx-auto md:flex md:flex-col md:items-center">
-		<SectionRectangle class="rectangle-about" :img="monokle"
-			>Обо мне</SectionRectangle
+	<section
+		class="about mt-36 max-w-5xl mx-auto md:flex md:flex-col md:items-center"
+	>
+		<SectionRectangle class="rectangle-about" :img="monokle">
+			Обо мне
+		</SectionRectangle>
+		<h3
+			class="about-title max-w-3xl font-extrabold text-5xl text-white mt-6 md:text-center md:text-4xl sm:text-3xl"
 		>
-		<h3 class="about-title max-w-3xl font-extrabold text-5xl text-white mt-6 md:text-center md:text-4xl sm:text-3xl">
 			Гений, миллиардер, плейбой, филантроп
 		</h3>
 		<p class="about-desc mt-6 text-gray text-lg">
@@ -13,19 +17,23 @@
 					src="~/assets/img/emojis/hand.png"
 					alt="hand"
 				/>
-				Меня зовут Дима, мой псевдоним Chopix, я занимаюсь разработкой сайтов и
-				телеграмм ботов на заказ<br /> </span
-			><br />
+				Меня зовут Дима, я занимаюсь разработкой сайтов и телеграмм ботов на
+				заказ
+				<br />
+			</span>
+			<br />
 			<span class="flex items-center">
 				<img
 					class="w-5 h-5 mr-2"
 					src="~/assets/img/emojis/comp.png"
 					alt="comp"
 				/>
-				Более года я занимаюсь веб разработкой, успел уверенно овладеть такими
-				технологиями как HTML, CSS, JS/TS, Vue JS, Nest JS. Так же на базовом
-				уровне владею PHP, Laravel<br /> </span
-			><br />
+				Более трех лет я занимаюсь веб разработкой, успел уверенно овладеть
+				такими технологиями как HTML, CSS, JS/TS, Vue JS, PHP, Laravel. Так же
+				на базовом уровне владею ExpressJS, NestJS
+				<br />
+			</span>
+			<br />
 			<span class="flex items-center">
 				<img
 					class="w-5 h-5 mr-2"
@@ -33,9 +41,10 @@
 					alt="bulb"
 				/>
 				В свободное время я изучаю что то новое, развиваюсь как в
-				програмировании, так и в разных других сферах, ну или же просто играю в
-				доту на тинкере<br /> </span
-			><br />
+				програмировании, так и в разных других сферах.
+				<br />
+			</span>
+			<br />
 			<span class="flex items-center">
 				<img
 					class="w-5 h-5 mr-2"
@@ -49,14 +58,14 @@
 </template>
 
 <script setup lang="ts">
-import monokle from '~/assets/img/emojis/monokle.png';
-import SectionRectangle from './UI/SectionRectangle.vue';
-import gsap from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { onMounted } from 'vue';
+import monokle from '~/assets/img/emojis/monokle.png'
+import SectionRectangle from './UI/SectionRectangle.vue'
+import gsap from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
+import { onMounted } from 'vue'
 
 onMounted(() => {
-	gsap.registerPlugin(ScrollTrigger);
+	gsap.registerPlugin(ScrollTrigger)
 	gsap.from('.rectangle-about', {
 		scrollTrigger: {
 			trigger: '.about',
@@ -66,7 +75,7 @@ onMounted(() => {
 		},
 		xPercent: -100,
 		opacity: 0,
-	});
+	})
 	gsap.from('.about-title', {
 		scrollTrigger: {
 			trigger: '.about',
@@ -75,7 +84,7 @@ onMounted(() => {
 		},
 		yPercent: 100,
 		opacity: 0,
-	});
+	})
 	gsap.from('.about-desc', {
 		scrollTrigger: {
 			trigger: '.about',
@@ -84,8 +93,8 @@ onMounted(() => {
 		},
 		opacity: 0,
 		xPercent: -100,
-	});
-});
+	})
+})
 </script>
 
 <style lang="scss" scoped>
@@ -105,8 +114,8 @@ onMounted(() => {
 	}
 }
 .about-desc {
-  @apply max-w-5xl;
-  @apply md:text-base;
-  @apply sm:text-sm;
+	@apply max-w-5xl;
+	@apply md:text-base;
+	@apply sm:text-sm;
 }
 </style>
