@@ -1,13 +1,9 @@
 <template>
-	<section
-		class="contacts flex items-center flex-col justify-center w-full mt-[118px]"
-	>
+	<section class="contacts flex items-center flex-col justify-center w-full mt-[118px]">
 		<SectionRectangle class="contacts-rectangle" :img="contacts">
 			Контакты
 		</SectionRectangle>
-		<h3
-			class="contacts-title font-extrabold text-5xl text-white mt-2 sm:text-4xl"
-		>
+		<h3 class="contacts-title font-extrabold text-5xl text-white mt-2 sm:text-4xl">
 			Мои контакты
 		</h3>
 		<div class="mt-8 mx-auto flex items-center">
@@ -31,41 +27,21 @@
 			<!--					/>-->
 			<!--				</svg>-->
 			<!--			</a>-->
-			<a class="contacts-tg" href="https://t.me/s3ptemberich" target="_blank">
-				<svg
-					class="svg-hover"
-					width="44"
-					height="44"
-					viewBox="0 0 44 44"
-					fill="none"
-					xmlns="http://www.w3.org/2000/svg"
-				>
+			<a class="contacts-tg" href="https://t.me/youngs3lfmade" target="_blank">
+				<svg class="svg-hover" width="44" height="44" viewBox="0 0 44 44" fill="none"
+					xmlns="http://www.w3.org/2000/svg">
 					<path
 						d="M22 0C9.856 0 0 9.856 0 22C0 34.144 9.856 44 22 44C34.144 44 44 34.144 44 22C44 9.856 34.144 0 22 0ZM32.208 14.96C31.878 18.436 30.448 26.884 29.722 30.778C29.414 32.428 28.798 32.978 28.226 33.044C26.95 33.154 25.982 32.208 24.75 31.394C22.814 30.118 21.714 29.326 19.844 28.094C17.666 26.664 19.074 25.872 20.328 24.596C20.658 24.266 26.29 19.14 26.4 18.678C26.4153 18.608 26.4132 18.5354 26.3941 18.4664C26.3749 18.3974 26.3392 18.3341 26.29 18.282C26.158 18.172 25.982 18.216 25.828 18.238C25.63 18.282 22.55 20.328 16.544 24.376C15.664 24.97 14.872 25.278 14.168 25.256C13.376 25.234 11.88 24.816 10.758 24.442C9.372 24.002 8.294 23.76 8.382 22.99C8.426 22.594 8.976 22.198 10.01 21.78C16.434 18.986 20.702 17.138 22.836 16.258C28.952 13.706 30.206 13.266 31.042 13.266C31.218 13.266 31.636 13.31 31.9 13.53C32.12 13.706 32.186 13.948 32.208 14.124C32.186 14.256 32.23 14.652 32.208 14.96Z"
-						fill="#7B4AE2"
-						fill-opacity="0.5"
-					/>
+						fill="#7B4AE2" fill-opacity="0.5" />
 				</svg>
 			</a>
 		</div>
-		<button
-			@click="scrollTo"
-			class="scroll-to flex items-center mt-12 text-primary-dark font-semibold text-xl bg-none"
-		>
+		<button @click="scrollTo" class="scroll-to flex items-center mt-12 text-primary-dark font-semibold text-xl bg-none">
 			Пролистать вверх
-			<svg
-				class="svg"
-				width="17"
-				height="29"
-				viewBox="0 0 17 29"
-				fill="none"
-				xmlns="http://www.w3.org/2000/svg"
-			>
+			<svg class="svg" width="17" height="29" viewBox="0 0 17 29" fill="none" xmlns="http://www.w3.org/2000/svg">
 				<path
 					d="M17 8.14656L8.5 0L0 8.14656L1.42871 9.51579L7.48984 3.70666V29H9.51028V3.70684L15.5713 9.51579L17 8.14656Z"
-					fill="#7B4AE2"
-					fill-opacity="0.5"
-				/>
+					fill="#7B4AE2" fill-opacity="0.5" />
 			</svg>
 		</button>
 	</section>
@@ -140,14 +116,18 @@ const scrollTo = () => {
 .svg {
 	margin-left: 10px;
 	animation: aniPromo 2.5s infinite forwards;
+
 	path {
 		transition: all 0.3s;
 	}
 }
+
 .scroll-to {
 	transition: all 0.3s;
+
 	&:hover {
 		color: rgba(123, 74, 226, 0.3);
+
 		svg {
 			path {
 				fill-opacity: 0.3;
@@ -155,10 +135,12 @@ const scrollTo = () => {
 		}
 	}
 }
+
 .svg-hover {
 	path {
 		transition: all 0.3s;
 	}
+
 	&:hover {
 		path {
 			fill-opacity: 0.3;
@@ -170,9 +152,11 @@ const scrollTo = () => {
 	0% {
 		transform: scale(1) translateY(0) rotate(0);
 	}
+
 	50% {
 		transform: scale(1.05) translateY(-10px) rotate(10deg);
 	}
+
 	to {
 		transform: scale(1) translateY(0) rotate(0);
 	}
