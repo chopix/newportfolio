@@ -1,25 +1,13 @@
 <template>
-	<section
-		class="experience py-[100px] border-solid border-y border-primary-semi"
-	>
+	<section class="experience py-[100px] border-solid border-y border-primary-semi">
 		<div class="flex items-center gap-x-48 justify-center lg:flex-col">
-			<ExperienceBlock
-				class="experience-block xl:mb-10"
-				title="ТРИ ГОДА"
-				subtitle="ПРОГРАММИСТ"
-				:img="FirstBlockImg"
-				:is-first-letter-capital="true"
-			/>
-			<ExperienceBlock
-				class="experience-block xl:mb-10"
-				title="ДВА ГОДА"
-				subtitle="КОМЕРЧЕСКОГО ОПЫТА"
-				:img="SecondBlockImg"
-			/>
+			<ExperienceBlock class="experience-block xl:mb-10" title="ТРИ ГОДА" subtitle="ПРОГРАММИСТ" :img="FirstBlockImg"
+				:is-first-letter-capital="true" />
+			<ExperienceBlock class="experience-block xl:mb-10" title="ДВА С ПОЛОВИНОЙ ГОДА" subtitle="КОМЕРЧЕСКОГО ОПЫТА"
+				:img="SecondBlockImg" />
 		</div>
 		<div
-			class="experience-big__block mx-auto flex items-center justify-evenly rounded-2xl max-w-xl w-full h-[110px] bg-primary-semi mt-8 sm:h-[70px] sm:max-w-xs"
-		>
+			class="experience-big__block mx-auto flex items-center justify-evenly rounded-2xl max-w-xl w-full h-[110px] bg-primary-semi mt-8 sm:h-[70px] sm:max-w-xs">
 			<div class="flex flex-col items-center">
 				<p class="text-primary text-base sm:text-xs">разработчик</p>
 				<p class="font-bold text-3xl text-primary sm:text-xl">фулстек</p>

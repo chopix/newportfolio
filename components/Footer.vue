@@ -1,8 +1,6 @@
 <template>
-	<footer
-		class="mt-[34px] w-full bg-primary-semi flex items-center justify-center text-gray text-base py-8"
-	>
-		Copyright © Toronto Tokyo · {{ year }}
+	<footer class="mt-[34px] w-full bg-primary-semi flex items-center justify-center text-gray text-base py-8">
+		Copyright © chopix · {{ year }}
 	</footer>
 </template>
 

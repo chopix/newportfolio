@@ -3,7 +3,7 @@
 		<div class="flex flex-col xl:items-center">
 			<SectionRectangle class="rectangle" :animateProp="true" :img="hand">Привет!</SectionRectangle>
 			<h1 class="title mt-6 text-[52px] text-white w-[189px] font-extrabold xl:text-center">
-				Toronto Tokyo
+				chopix
 			</h1>
 			<h2 class="subtitle mt-4 text-xl text-gray xl:mb-5">Fullstack web developer</h2>
 		</div>
