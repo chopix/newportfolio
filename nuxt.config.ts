@@ -6,7 +6,7 @@
 export default defineNuxtConfig({
  app: {
 					head: {
-									title: 'Toronto Tokyo - fullstack dev',
+									title: 'chopix - fullstack dev',
 									meta: [{ name: 'freelancehunt', content: '1896eb1c026e952' }],
 									link: [
 													{
