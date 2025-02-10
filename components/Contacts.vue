@@ -1,10 +1,10 @@
 <template>
 	<section class="contacts flex items-center flex-col justify-center w-full mt-[118px]">
 		<SectionRectangle class="contacts-rectangle" :img="contacts">
-			Контакты
+			{{ $t('contacts.contacts') }}
 		</SectionRectangle>
 		<h3 class="contacts-title font-extrabold text-5xl text-white mt-2 sm:text-4xl">
-			Мои контакты
+			{{ $t('contacts.title') }}
 		</h3>
 		<div class="mt-8 mx-auto flex items-center gap-x-5">
 			<a class="contacts-tg" href="https://t.me/youngs3lfmade" target="_blank">
@@ -30,7 +30,7 @@
 			</a>
 		</div>
 		<button @click="scrollTo" class="scroll-to flex items-center mt-12 text-primary-dark font-semibold text-xl bg-none">
-			Пролистать вверх
+			{{ $t('contacts.up') }}
 			<svg class="svg" width="17" height="29" viewBox="0 0 17 29" fill="none" xmlns="http://www.w3.org/2000/svg">
 				<path
 					d="M17 8.14656L8.5 0L0 8.14656L1.42871 9.51579L7.48984 3.70666V29H9.51028V3.70684L15.5713 9.51579L17 8.14656Z"

@@ -1,61 +1,31 @@
 <template>
-	<section
-		class="technologies mt-[128px] flex justify-center items-center flex-col block"
-	>
+	<section class="technologies mt-[128px] flex justify-center items-center flex-col block">
 		<SectionRectangle :img="comp" class="technologies-rectangle">
-			Стек технологий
+			{{ $t('stack.stack') }}
 		</SectionRectangle>
-		<h3
-			class="technologies-title mt-5 text-5xl text-white font-extrabold md:text-center md:text-4xl md"
-		>
-			Технологии, которыми я владею
+		<h3 class="technologies-title mt-5 text-5xl text-white font-extrabold md:text-center md:text-4xl md">
+			{{ $t('stack.title') }}
 		</h3>
-		<p
-			class="technologies-subtitle text-gray text-2xl mt-[103px] md:mt-[50px] sm:text-center"
-		>
-			Технологии, которыми я уверенно владею
+		<p class="technologies-subtitle text-gray text-2xl mt-[103px] md:mt-[50px] sm:text-center">
+			{{ $t('stack.confident') }}
 		</p>
-		<div
-			class="mt-[37px] max-w-[936px] w-full flex items-center justify-center gap-7 md:flex-wrap"
-		>
-			<div
-				class="hover-tooltip relative"
-				:key="index"
-				v-for="(item, index) in confidently"
-			>
-				<img
-					class="technologies-img h-[64px]"
-					:src="item.path"
-					:alt="item.name"
-				/>
+		<div class="mt-[37px] max-w-[936px] w-full flex items-center justify-center gap-7 md:flex-wrap">
+			<div class="hover-tooltip relative" :key="index" v-for="(item, index) in confidently">
+				<img class="technologies-img h-[64px]" :src="item.path" :alt="item.name" />
 				<div
-					class="tooltip flex invisible opacity-0 justify-center items-center border-solid border border-primary w-fit px-2 rounded-xl absolute h-[29px] text-primary text-sm font-bold -bottom-12 left-1/2 -translate-x-1/2 z-50"
-				>
+					class="tooltip flex invisible opacity-0 justify-center items-center border-solid border border-primary w-fit px-2 rounded-xl absolute h-[29px] text-primary text-sm font-bold -bottom-12 left-1/2 -translate-x-1/2 z-50">
 					{{ item.name }}
 				</div>
 			</div>
 		</div>
-		<p
-			class="technologies-subtitle text-gray text-2xl mt-[64px] sm:text-center"
-		>
-			Технологии, с которыми мне приходилось работать
+		<p class="technologies-subtitle text-gray text-2xl mt-[64px] sm:text-center">
+			{{ $t('stack.not_confident') }}
 		</p>
-		<div
-			class="mt-[37px] max-w-[936px] w-full flex items-center justify-center gap-7 md:flex-wrap"
-		>
-			<div
-				class="hover-tooltip relative"
-				:key="index"
-				v-for="(item, index) in notConfidently"
-			>
-				<img
-					class="technologies-img h-[64px] md:mb-4"
-					:src="item.path"
-					:alt="item.name"
-				/>
+		<div class="mt-[37px] max-w-[936px] w-full flex items-center justify-center gap-7 md:flex-wrap">
+			<div class="hover-tooltip relative" :key="index" v-for="(item, index) in notConfidently">
+				<img class="technologies-img h-[64px] md:mb-4" :src="item.path" :alt="item.name" />
 				<div
-					class="tooltip flex invisible opacity-0 justify-center items-center border-solid border border-primary w-fit px-2 rounded-xl absolute h-[29px] text-primary text-sm font-bold -bottom-12 left-1/2 -translate-x-1/2 z-50"
-				>
+					class="tooltip flex invisible opacity-0 justify-center items-center border-solid border border-primary w-fit px-2 rounded-xl absolute h-[29px] text-primary text-sm font-bold -bottom-12 left-1/2 -translate-x-1/2 z-50">
 					{{ item.name }}
 				</div>
 			</div>

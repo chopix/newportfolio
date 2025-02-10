@@ -8,13 +8,17 @@
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {
+    "@nuxtjs/i18n": "^9.2.0",
     "@nuxtjs/tailwindcss": "^6.13.1",
-    "nuxt": "3.15.2"
+    "nuxt": "3.15.2",
+    "vite": "^6.1.0",
+    "vue": "^3.5.13"
   },
   "dependencies": {
     "gsap": "^3.12.7",
     "sass": "^1.83.4",
     "sass-loader": "^16.0.4",
-    "split-text-js": "^1.0.3"
+    "split-text-js": "^1.0.3",
+    "vue-i18n": "^11.1.1"
   }
 }

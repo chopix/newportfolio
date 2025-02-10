@@ -1,26 +1,15 @@
 <template>
-	<div
-		@mousemove="ripple"
-		ref="projectBlock"
-		class="w-[360px] h-fit border border-solid border-primary-dark py-7 px-[30px] rounded-2xl project-block overflow-hidden sm:w-[280px]"
-	>
+	<div @mousemove="ripple" ref="projectBlock"
+		class="w-[360px] h-fit border border-solid border-primary-dark py-7 px-[30px] rounded-2xl project-block overflow-hidden sm:w-[280px]">
 		<div class="inner">
 			<h3 class="text-white font-bold text-xl">{{ title }}</h3>
 			<p class="text-gray text-sm mt-2">{{ subtitle }}</p>
 			<div class="my-[26px]" v-if="link && link?.length >= 1">
-				<a
-					class="text-primary decoration-solid text-sm underline block-link"
-					target="_blank"
-					:href="link"
-					>Ссылка</a
-				>
+				<a class="text-primary decoration-solid text-sm underline block-link" target="_blank" :href="link">Ссылка</a>
 			</div>
-			<div :class="{ 'mt-67px': link == undefined }" class="flex items-center">
-				<div
-					:key="index"
-					v-for="(item, index) in tags"
-					class="bg-primary-semi w-fit px-3 h-[30px] rounded-2xl text-primary font-bold text-base flex justify-center items-center [&:not(:last-child)]:mr-2"
-				>
+			<div :class="{ 'mt-67px': link == undefined }" class="flex items-center flex-wrap gap-y-1">
+				<div :key="index" v-for="(item, index) in tags"
+					class="bg-primary-semi w-fit px-3 h-[30px] rounded-2xl text-primary font-bold text-base flex justify-center items-center [&:not(:last-child)]:mr-2">
 					{{ item }}
 				</div>
 			</div>
@@ -72,6 +61,7 @@ const ripple = (e) => {
 
 .block-link {
 	transition: all 0.3s;
+
 	&:hover {
 		@apply text-primary-dark;
 	}
@@ -81,8 +71,10 @@ const ripple = (e) => {
 	position: relative;
 	z-index: 1;
 }
+
 .project-block {
 	position: relative;
+
 	&::before {
 		content: '';
 		position: absolute;
@@ -95,6 +87,7 @@ const ripple = (e) => {
 		background: rgba(123, 74, 226, 0.1);
 		transition: width 0.7s, height 0.7s;
 	}
+
 	&:hover::before {
 		width: 1300px;
 		height: 1300px;

@@ -1,26 +1,12 @@
 <template>
 	<section class="portfolio mt-[208px] md:mt-[100px]">
-		<SectionRectangle class="rectangle-portfolio" :img="link"
-			>Портфолио</SectionRectangle
-		>
-		<h3
-			class="portfolio-title max-w-3xl font-extrabold text-5xl text-white mt-6"
-		>
-			Мои проекты
+		<SectionRectangle class="rectangle-portfolio" :img="link">{{ $t('projects.projects') }}</SectionRectangle>
+		<h3 class="portfolio-title max-w-3xl font-extrabold text-5xl text-white mt-6">
+			{{ $t('projects.title') }}
 		</h3>
-		<div
-			class="mt-[100px] px-4 flex items-start gap-12 justify-center flex-wrap"
-		>
-			<ProjectBlock
-				class="portfolio-block"
-				:key="index"
-				v-for="(item, index) in Projects"
-				:title="item.title"
-				:subtitle="item.subtitle"
-				:img="item.img"
-				:link="item.link"
-				:tags="item.tags"
-			/>
+		<div class="mt-[100px] px-4 flex items-start gap-12 justify-center flex-wrap">
+			<ProjectBlock class="portfolio-block" :key="index" v-for="(item, index) in Projects" :title="item.title"
+				:subtitle="$t(item.subtitle)" :img="item.img" :link="item.link" :tags="item.tags" />
 		</div>
 	</section>
 </template>

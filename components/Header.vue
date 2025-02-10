@@ -1,87 +1,53 @@
 <template>
 	<header
 		class="header w-full bg-primary-header h-16 rounded-2xl px-6 flex justify-between py-[7px] items-center relative"
-    style="z-index: 10000"
-	>
+		style="z-index: 10000">
 		<Logo class="header-logo" />
 		<nav>
 			<ul class="header-list flex items-center md:hidden">
-				<li
-					@click="scrollToExp"
-					class="header-li__item text-white text-lg hover:text-primary cursor-pointer"
-				>
-					Опыт
+				<li @click="scrollToExp" class="header-li__item text-white text-lg hover:text-primary cursor-pointer">
+					{{ $t('header.experience') }}
 				</li>
-				<li
-					@click="scrollToAbout"
-					class="header-li__item text-white text-lg hover:text-primary cursor-pointer"
-				>
-					Обо мне
+				<li @click="scrollToAbout" class="header-li__item text-white text-lg hover:text-primary cursor-pointer">
+					{{ $t('header.about') }}
 				</li>
-				<li
-					@click="scrollToPort"
-					class="header-li__item text-white text-lg hover:text-primary cursor-pointer"
-				>
-					Портфолио
+				<li @click="scrollToPort" class="header-li__item text-white text-lg hover:text-primary cursor-pointer">
+					{{ $t('header.portfolio') }}
 				</li>
-				<li
-					@click="scrollToTech"
-					class="header-li__item text-white text-lg hover:text-primary cursor-pointer"
-				>
-					Технологии
+				<li @click="scrollToTech" class="header-li__item text-white text-lg hover:text-primary cursor-pointer">
+					{{ $t('header.stack') }}
 				</li>
-				<li
-					@click="scrollToCont"
-					class="header-li__item text-white text-lg hover:text-primary cursor-pointer"
-				>
-					Контакты
+				<li @click="scrollToCont" class="header-li__item text-white text-lg hover:text-primary cursor-pointer">
+					{{ $t('header.contacts') }}
 				</li>
 			</ul>
-			<button
-				@click="showNav = !showNav"
-				style="box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)"
+			<button @click="showNav = !showNav" style="box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)"
 				class="hidden md:flex bg-primary-semi w-9 h-9 items-center justify-center relative rounded-2xl"
-				:class="{ active: showNav }"
-			>
+				:class="{ active: showNav }">
 				<div class="menu-bar one"></div>
 				<div class="menu-bar two"></div>
 				<div class="menu-bar three"></div>
 			</button>
 		</nav>
-    <div v-if="showNav" class="container flex justify-between mobile-menu">
-      <ul v-if="showNav" class="flex flex-col justify-center items-center w-full">
-        <li
-          @click="scrollToExp"
-          class="header-li__item text-white text-lg hover:text-primary cursor-pointer"
-        >
-          Опыт
-        </li>
-        <li
-          @click="scrollToAbout"
-          class="header-li__item text-white text-lg hover:text-primary cursor-pointer"
-        >
-          Обо мне
-        </li>
-        <li
-          @click="scrollToPort"
-          class="header-li__item text-white text-lg hover:text-primary cursor-pointer"
-        >
-          Портфолио
-        </li>
-        <li
-          @click="scrollToTech"
-          class="header-li__item text-white text-lg hover:text-primary cursor-pointer"
-        >
-          Технологии
-        </li>
-        <li
-          @click="scrollToCont"
-          class="header-li__item text-white text-lg hover:text-primary cursor-pointer"
-        >
-          Контакты
-        </li>
-      </ul>
-    </div>
+		<div v-if="showNav" class="container flex justify-between mobile-menu">
+			<ul v-if="showNav" class="flex flex-col justify-center items-center w-full">
+				<li @click="scrollToExp" class="header-li__item text-white text-lg hover:text-primary cursor-pointer">
+					{{ $t('header.experience') }}
+				</li>
+				<li @click="scrollToAbout" class="header-li__item text-white text-lg hover:text-primary cursor-pointer">
+					{{ $t('header.about') }}
+				</li>
+				<li @click="scrollToPort" class="header-li__item text-white text-lg hover:text-primary cursor-pointer">
+					{{ $t('header.portfolio') }}
+				</li>
+				<li @click="scrollToTech" class="header-li__item text-white text-lg hover:text-primary cursor-pointer">
+					{{ $t('header.stack') }}
+				</li>
+				<li @click="scrollToCont" class="header-li__item text-white text-lg hover:text-primary cursor-pointer">
+					{{ $t('header.contacts') }}
+				</li>
+			</ul>
+		</div>
 	</header>
 </template>
 
@@ -167,29 +133,30 @@ onMounted(() => {
 }
 
 .mobile-menu {
-  position: absolute;
-  height: 220px;
-  @apply w-full;
-  top: 46px;
-  left: 0px;
-  background-color: #0F1121;
-  border-bottom-left-radius: 16px;
-  border-bottom-right-radius: 16px;
-  z-index: 1000;
-  animation: growDown 300ms ease-in-out both;
-  animation-direction: alternate;
-  //animation-iteration-count: infinite;
-  transform-origin: top center;
+	position: absolute;
+	height: 220px;
+	@apply w-full;
+	top: 46px;
+	left: 0px;
+	background-color: #0F1121;
+	border-bottom-left-radius: 16px;
+	border-bottom-right-radius: 16px;
+	z-index: 1000;
+	animation: growDown 300ms ease-in-out both;
+	animation-direction: alternate;
+	//animation-iteration-count: infinite;
+	transform-origin: top center;
 
 }
 
 @keyframes growDown {
-  from {
-    transform: scaleY(0)
-  }
-  to {
-    transform: scaleY(1)
-  }
+	from {
+		transform: scaleY(0)
+	}
+
+	to {
+		transform: scaleY(1)
+	}
 }
 
 .menu-bar {
@@ -217,6 +184,7 @@ onMounted(() => {
 	top: 22px;
 	transition: all 0.3s;
 }
+
 @keyframes slideOut {
 	0% {
 		width: 100%;
@@ -229,6 +197,7 @@ onMounted(() => {
 		left: 0%;
 		right: auto;
 	}
+
 	51% {
 		width: 0%;
 		right: 0%;
@@ -248,11 +217,13 @@ onMounted(() => {
 	left: 5px;
 	transform: rotate(45deg);
 }
+
 .active .two {
 	top: 50%;
 	left: 5px;
 	transform: rotate(-45deg);
 }
+
 .active .three {
 	top: 50%;
 	left: 5px;
@@ -260,8 +231,8 @@ onMounted(() => {
 }
 
 @media screen and (max-width: 767.98px) {
-  .header-li__item:not(:last-child) {
-    margin-bottom: 10px;
-  }
+	.header-li__item:not(:last-child) {
+		margin-bottom: 10px;
+	}
 }
 </style>

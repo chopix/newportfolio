@@ -3,6 +3,7 @@ import mordorrp from '~/assets/img/projects/mordorrp.jpg'
 import jetset from '~/assets/img/projects/jetset.png'
 import vdome from '~/assets/img/projects/vdome.jpg'
 import uxy from '~/assets/img/projects/uxy.jpg'
+import aiton from '~/assets/img/projects/aiton.jpg'
 
 interface IProjects {
 	title: string
@@ -16,38 +17,44 @@ const Projects: Array<IProjects> = [
 	{
 		title: 'West RP',
 		subtitle:
-			'Сайт для сервера самп, много различных красивых анимаций, слайдеры, модальные окна, система личного кабинета с авторизацией.',
+			'projects.west_desc',
 		tags: ['Nuxt JS', 'Laravel', 'Vue JS'],
 		img: westrp,
 	},
 	{
-		title: 'Админ панель для Mordor RP',
+		title: 'Mordor RP CRM',
 		subtitle:
-			'Многофункциональная админ панель для управление сервером самп, почти полное управление сервером с сайта, так же присутствует аналитика онлайна/дохода.',
+			'projects.mordor_desc',
 		tags: ['Vue JS', 'Laravel'],
 		img: mordorrp,
 	},
 	{
 		title: 'Jetset',
 		subtitle:
-			'Лендинг для компании Jetset, на сайте присутствует мультиязычность(английский, греческий), и красивые анимации',
+			'projects.jetset_desc',
 		tags: ['Nuxt JS', 'Vue JS', 'GSAP'],
 		img: jetset,
 	},
 	{
 		title: 'Vdome',
 		subtitle:
-			'Сайт для компании молодежной компании VDOME, которая организовывает проекты для молодежи. На сайте присутствуют анимации, так же наполнением сайта можно полностью управлять через телеграмм бота.',
+			'projects.vdome_desc',
 		tags: ['Nuxt JS', 'Vue JS', 'GSAP', 'Laravel'],
 		img: vdome,
-		link: 'https://vdomeomsk.ru/',
 	},
 	{
 		title: 'UXY',
 		subtitle:
-			'Огромный по функционалу телеграмм бот, под названием UXY. Бот предназначен для AB тестирования различных рекламных креативов. Суть работы: пользователь добавляет телеграмм канал в бота, затем создает 2 или больше рекламных креатива, затем пользователь выбирает переодичность, с которой будет меняться креативы и время AB теста. Бот постит креатив в канал, затем меняет их с переодичностью, которую указал пользователь. По окончания теста, бот оставляет креатив, который собрал больше всего переходов. В боте присутствует система промокодов, полностью гибкая настройка бота через админ панель и много другого.',
+			'projects.uxy_desc',
 		tags: ['Typescript', 'TelegrafJS', 'MySQL'],
 		img: uxy,
+	},
+	{
+		title: 'AI Ton Bot',
+		subtitle:
+			'projects.aiton_desc',
+		tags: ['Typescript', 'VueJS', 'GrammyJS', 'Telegram Web App', 'Web3', 'GSAP'],
+		img: aiton,
 	},
 ]
 

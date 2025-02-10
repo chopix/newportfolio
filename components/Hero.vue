@@ -1,9 +1,9 @@
 <template>
 	<main class="w-full mt-25 flex items-center xl:flex-col xl:justify-center xl:items-center">
 		<div class="flex flex-col xl:items-center">
-			<SectionRectangle class="rectangle" :animateProp="true" :img="hand">Привет!</SectionRectangle>
-			<h1 class="title mt-6 text-[52px] text-white w-[189px] font-extrabold xl:text-center">
-				chopix
+			<SectionRectangle class="rectangle" :animateProp="true" :img="hand">{{ $t('hero.hello') }}</SectionRectangle>
+			<h1 class="title mt-6 text-[52px] text-white w-[250px] font-extrabold xl:text-center">
+				{{ $t('hero.name') }}
 			</h1>
 			<h2 class="subtitle mt-4 text-xl text-gray xl:mb-5">Fullstack web developer</h2>
 		</div>
