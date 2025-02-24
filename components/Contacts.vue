@@ -7,7 +7,7 @@
 			{{ $t('contacts.title') }}
 		</h3>
 		<div class="mt-8 mx-auto flex items-center gap-x-5">
-			<a class="contacts-tg" href="https://t.me/youngs3lfmade" target="_blank">
+			<a class="contacts-tg" href="https://t.me/chopixlzt" target="_blank">
 				<svg class="svg-hover" width="44" height="44" viewBox="0 0 44 44" fill="none"
 					xmlns="http://www.w3.org/2000/svg">
 					<path
