@@ -15,7 +15,7 @@ export default defineNuxtPlugin(nuxtApp => {
         },
         hero: {
           hello: 'Hello',
-          name: 'Dmitriy Dzhurliak',
+          name: 'chopix',
         },
         experience: {
           one: 'three years',
@@ -30,8 +30,8 @@ export default defineNuxtPlugin(nuxtApp => {
         about: {
           about: 'About me',
           title: 'Stability - is about me :)',
-          one: 'My name is Dima, I\'\m working as a developer and developing websites and telegram bots',
-          two: 'I have been doing development for more than three years and have confidently mastered technologies such as HTML, CSS, JS/TS, Vue JS, PHP, and Laravel. I also have basic knowledge of ExpressJS and NestJS',
+          one: 'My name is Dima, I\'\m working as a developer and developing websites, telegram bots, parsers, scrappers, checkers.',
+          two: 'I have been doing development for more than three years and have confidently mastered technologies such as HTML, CSS, JS/TS, Vue JS, PHP, Laravel, Python, Django. I also have basic knowledge of ExpressJS and NestJS',
           three: 'In my free time, I study new things and self-educate myself both in programming and in various other areas',
           four: 'Every day I try to be better than I was yesterday',
         },
@@ -67,7 +67,7 @@ export default defineNuxtPlugin(nuxtApp => {
         },
         hero: {
           hello: 'Привет',
-          name: 'Dmitriy Dzhurliak',
+          name: 'chopix',
         },
         experience: {
           one: 'три года',
@@ -82,8 +82,8 @@ export default defineNuxtPlugin(nuxtApp => {
         about: {
           about: 'О мне',
           title: 'Надежность - это про меня :)',
-          one: 'Меня зовут Дима, я занимаюсь программированием и создаю вебсайты, телеграмм боты.',
-          two: 'Я занимаюсь разработкой уже более трех лет и уверенно освоил такие технологии, как HTML, CSS, JS/TS, Vue JS, PHP и Laravel. Я также обладаю базовыми знаниями ExpressJS и NestJS',
+          one: 'Меня зовут Дима, я занимаюсь программированием и создаю вебсайты, телеграмм ботов, парсеры, скраперы, чекеры на заказ',
+          two: 'Я занимаюсь разработкой уже более трех лет и уверенно освоил такие технологии, как HTML, CSS, JS/TS, Vue JS, PHP, Laravel, Python, Django. Я также обладаю базовыми знаниями ExpressJS и NestJS',
           three: 'В свободное время я изучаю новые вещи и занимаюсь самообразованием как в области программирования, так и в различных других сферах.',
           four: 'Каждый день я стараюсь быть лучше, чем вчера.',
         },
